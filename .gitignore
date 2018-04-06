@@ -1,0 +1,3 @@
+output/*.out
+output/*.aux
+output/*.log
