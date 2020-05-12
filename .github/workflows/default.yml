@@ -34,27 +34,27 @@ jobs:
 
 
     - uses: stefanzweifel/git-auto-commit-action@v4.2.0
-    with:
-      # Required
-      commit_message: Autosave PDF file
-  
-      # Optional branch to push to, defaults to the current branch
-      branch: master
-  
-      # Optional git params
-      commit_options: '--no-verify --signoff'
-  
-      # Optional glob pattern of files which should be added to the commit
-      file_pattern: output/*.pdf
-  
-      # Optional local file path to the repository
-      repository: .
-  
-      # Optional commit user and author settings
-      commit_user_name: Piyush Mishra
-      commit_user_email: piymis6@gmail.com
-      commit_author: Piyush Mishra <piymis6@gmail.com>
-  
-      # Optional tag message 
-      # Action will create and push a new tag to the remote repository and the defined branch
-      # tagging_message: 'v1.0.0'
+      with:
+        # Required
+        commit_message: Autosave PDF file
+    
+        # Optional branch to push to, defaults to the current branch
+        branch: master
+    
+        # Optional git params
+        commit_options: '--no-verify --signoff'
+    
+        # Optional glob pattern of files which should be added to the commit
+        file_pattern: output/*.pdf
+    
+        # Optional local file path to the repository
+        repository: .
+    
+        # Optional commit user and author settings
+        commit_user_name: Piyush Mishra
+        commit_user_email: piymis6@gmail.com
+        commit_author: Piyush Mishra <piymis6@gmail.com>
+    
+        # Optional tag message 
+        # Action will create and push a new tag to the remote repository and the defined branch
+        # tagging_message: 'v1.0.0'
