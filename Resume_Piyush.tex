@@ -1,188 +1,196 @@
-\documentclass[]{Resume_Piyush}
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     LAST UPDATED DATE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lastupdated
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     TITLE NAME
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://piymis.com/}{\Large Piyush Mishra}} & Email : \href{mailto:piymis6@gmail.com}{piymis6@gmail.com}\\
+  \href{https://piymis.com/}{https://piymis.com/} & Mobile : +91-9911669538 \\
+\end{tabular*}
 
 
-\namesection{}{Piyush Mishra}{ \urlstyle{same}\url{piymis.com} \\
-\href{mailto:piymis6@gmail.com}{piymis6@gmail.com} | +91 9911669538
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN ONE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{minipage}[t]{0.33\textwidth} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Education} 
-
-\subsection{Delhi Technological \newline University}
-\descript{B.Tech in Electronics \& Communications}
-\location{May 2015 | Delhi, India \\ Aggregate: 73.4\%}
-\sectionsep
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Delhi Technological University}{Delhi, India}
+      {Bachelor of Technology in Electronics and Communication;  GPA: 8.1/10.0}{Aug. 2011 -- May. 2015}
+  \resumeSubHeadingListEnd
 
 
-\subsection{DAV Public School}
-\descript{AISSCE, CBSE}
-\location{March 2011 |  Delhi, India \\ Aggregate: 88.2\%}
-
-\descript{AISSE, CBSE}
-\location{March 2009 |  Delhi, India \\ Aggregate: 85.8\%}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\subsection{Languages}
-\location{Proficient:}
-Python \textbullet{}   C \textbullet{} C++ \textbullet{Javascript} \\
-Java \textbullet{} Shell Script \textbullet{} HTML \textbullet{} CSS \\
-\location{Familiar:}
-Perl \textbullet{} VHDL \textbullet{} SQL \textbullet{} Assembly \\
-\sectionsep
-
-\subsection{Frameworks}
-Django \textbullet{}   Flask \textbullet{} Bootstrap \\
-React \textbullet{} Tkinter \\
-\sectionsep
-
-\subsection{Tools}
-Git \textbullet{} Jenkins \textbullet{} Jira \\
-NPM
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Links} 
-Github:// \href{https://github.com/piymis}{\custombold{piymis}} \\
-LinkedIn://  \href{https://www.linkedin.com/in/piymis/}{\custombold{piymis}} \\
-\sectionsep
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PROJECTS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Projects}
-\href{https://lex-web-ui-bc-codebuilddeploy-ha15ce-webappbucket-67liriy2mwy2.s3.amazonaws.com/index.html}{AI chatbot} \\
-\href{https://github.com/piymis/reddit-bot}{Reddit bot} \\
-\href{https://github.com/piymis/Kilo-Clone}{Terminal text editor} \\
-\href{}{URL shortener} \\
-\href{https://github.com/piymis/utility-scripts}{Shell utility scripts} \\
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN TWO
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\end{minipage} 
-\hfill
-\begin{minipage}[t]{0.66\textwidth} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%-----------EXPERIENCE-----------------
 \section{Experience}
+  \resumeSubHeadingListStart
 
-\runsubsection{Amadeus}
-\descript{| Senior Software Engineer }
-\location{July 2015 – Present | Bangalore, India \& Nice, France}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Developing REST APIs to handle shopping, booking \& after-sales operation of Hotel IT platform for Premier Inn. Languages: Python
-\item Developed backend components for rail webservices distribution platform handling booking \& ticketing functionalities. Languages: Python \& C++
-\item Developed web application, REST API \& python library for managing of passenger record data. Framework: Django.  Languages: Python 
-\item Developed tool to migrate API changes for SOAP based test scenarios. Languages: Python \& Perl 
-\item Developed command line interface for using internal logging facility \& issue tracking tools. Languages: Python
-\item Acted as production load coordinator across global regression teams for Rail Business Unit.
-\item Mentoring and grooming of team-members and interns. 
-\end{tightemize}
-\sectionsep
+    \resumeSubheading
+      {Goibibo}{Bangalore, India}
+      {Sr. Software Engineer}{October 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{InGoIbibo}
+          {Developing REST APIs to handle shopping and booking transactions for Hotel IT platform.}
+      \resumeItemListEnd
 
-\runsubsection{MTS India}
-\descript{| Intern }
-\location{May 2013 – Aug 2013 | Delhi, India}
-\begin{tightemize}
-\item Developed command line interface for internal issue tracking system. Language: Python
-\end{tightemize}
-\sectionsep
+    \resumeSubheading
+      {Amadeus}{Bangalore, India}
+      {Sr. Software Engineer}{July 2015 - October 2019}
+      \resumeItemListStart
+        \resumeItem{Channel Hub}
+          {Developing REST APIs to handle shopping and booking transactions for Hotel IT platform.}
+        \resumeItem{Rail OBE}
+          {Developed Open Backend (OBE) components for rail web services distribution platform.}
+        \resumeItem{SPEAR}
+          {Developed web application and REST API for managing of passenger record data.}
+        \resumeItem{ALF Library}
+          {Developed python library for internal issue tracking system.}
+        \resumeItem{Data Integrity Checker}
+          {Tool to check data integrity among databases having incompatible schema.}
+        \resumeItem{Load Coordinator}
+          {Global production load coordinator for rail business unit.}
+        \resumeItem{Mentorship}
+          {Mentoring and grooming of interns.}      
+      \resumeItemListEnd
+      
+   \resumeSubHeadingListEnd
 
-\runsubsection{Bharat Electronics Limited}
-\descript{| Intern}
-\location{Jan 2013 – May 2013 | Ghaziabad, India}
-\begin{tightemize}
-\item Design, simulation \& testing of electronic FPGA systems. Language: VHDL \& C.
-\end{tightemize}
-\sectionsep
+%-----------PROJECTS and RESEARCH-----------------
+\section{Projects and Research}
+  \resumeSubHeadingListStart
+   
+   \resumeSubItem{Classification of brain tumors}
+      {Gaussian filter to extract the noise and statistical texture features from the MRI scans and a decision tree classifier to predict the type of brain tumor.}
+   \resumeSubItem{Twitter sentiment analysis.}
+      {Sentiment analysis of tweets based on their positive or negative connotations.}
+    \resumeSubItem{MQTT Implementation}
+      {MQTT client and server implementation over WebSocket in Node.js.}
+    \resumeSubItem{I\textsuperscript{2}C protocol}
+      {I\textsuperscript{2}C Bus Master Implementation Using VHDL.}
+    \resumeSubItem{Interactive piano}
+      {FPGA based interactive piano implemented using a monitor as touch screen device and sound generation using Karplus Strong string synthesis.}
+    \resumeSubItem{Seminars}
+      {Presented seminars on Software defined radio and fourth generation wireless technologies.}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      
+  \resumeSubHeadingListEnd
 
-\section{Research}
-\descript{I2C bus protocol design and simulation}
-\location{Sep 2013 – Dec 2013}
-Implemented I2C bus protocol clocked at 100 KHz on Spartan-3E FPGA board. 
 
-\descript{Reversible logic gates}
-\location{Feb 2014 – May 2014}
-Implemented and simulated the design of binary decoder using CMOS transmission gates in VHDL.
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     WORKSHOPS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% --------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Languages}{: C, C++, Python, Javascript, Java, Perl, Shell scripting}
+     \hfill
+     \textbf{Technologies}{: Django, Flask, React, Redis, Kafka, Celery, MySQL, Couchbase, Docker, Kubernetes, AWS, Protobuf, Nodejs}
+    }
+ \resumeSubHeadingListEnd
+ 
+% --------Workshops ------------ 
 \section{Workshops}
-\descript{Agile asia}\location{Bangalore, India}
-Behavior driven development using Java \& Python
-\sectionsep
-
-\descript{Texas Instruments}\location{New Delhi, India}
-BeagleBone Black development using cloud9 IDE
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Awards} 
-\begin{tabular}{rll}
-2018  &  Top 10  &  Futurize hackathon. Amadeus Labs\\
-2017  &  Top 4  & Department Innovation. Amadeus Labs\\
-2016  &  Twice & Recognised for work. Amadeus Labs\\
-2013  &  Top 5 & Electronic Voting Machine, Troika IEEE\\
-2011  &  Top 0.5\% & IIT-JEE \& AIEEE 2011\\
-\end{tabular}
-\sectionsep
-
-
-\end{minipage} 
+ \resumeSubHeadingListStart
+    \resumeSubItem{Texas Instruments}
+      {Linux Kernel Driver Development on Beaglebone Black.}
+    \resumeSubItem{Agile Asia}
+      {Behavior driven development using Java and Python.}
+ \resumeSubHeadingListEnd 
+ 
+% --------Awards ------------ 
+\section{Recognitions}
+ \resumeSubHeadingListStart
+     \item{
+     {Winner at Futurize hackathon for AI-based hotel concierge chatbot using Amazon Lex integrated with Alexa.}
+    }
+     \item{
+     {Recognized and awarded best performer four times at work.}
+    }
+     \item{
+      {Scored top 0.2\% among 1.2 million aspirants in IIT JEE and AIEEE 2011 examinations.}
+    }
+ \resumeSubHeadingListEnd  
+ 
+% --------Courses ------------ 
+\section{Online Courses}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Introduction to Computer Science and
+     Programming}{: Massachusetts Institute of Technology}
+    }
+    \item{
+     \textbf{Algorithmic Toolbox and Data Structures}{: University of California San Diego}
+    }
+    \item{
+     \textbf{Heterogeneous Parallel Programming}{: University of Illinois at Urbana-Champaign}
+    }
+    
+ \resumeSubHeadingListEnd 
+ 
+%-------------------------------------------
 \end{document}
