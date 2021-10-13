@@ -9,3 +9,5 @@ fi
 xelatex Resume_Piyush.tex 
 mv *.out *.log *.pdf *.aux output/
 mv output/Resume_Piyush.pdf output/Resume_Piyush${ext}.pdf
+
+# ./laton -o output -g Resume_Piyush.tex
